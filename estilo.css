@@ -1,0 +1,13 @@
+:root { --bg: #0f0b18; --panel: #191325; --line: #2e2440; --text: #f1ecfa; --muted: #9b90b3; --a: #d8b4fe; }
+@media (prefers-color-scheme: light) { :root { --bg: #faf8fd; --panel: #fff; --line: #e6dff1; --text: #1d1530; --muted: #5f5675; --a: #7c3aed; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+.marca { font-weight: 800; letter-spacing: -.01em; background: linear-gradient(135deg, #a855f7, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent; margin: 0 0 18px; }
+.marca a { color: inherit; text-decoration: none; }
+h1 { font-size: clamp(26px, 5vw, 36px); line-height: 1.2; letter-spacing: -.02em; margin: 0 0 18px; }
+h2 { font-size: 20px; margin: 34px 0 8px; }
+p, li { color: var(--text); } .nota { color: var(--muted); font-size: 15px; }
+a { color: var(--a); }
+.boton { display: inline-block; padding: 10px 18px; border-radius: 10px; color: #fff; text-decoration: none; font-weight: 650; background: linear-gradient(135deg, #a855f7, #ec4899); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
